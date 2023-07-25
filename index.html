@@ -7,7 +7,57 @@
     <title>Trails</title>
 </head>
 <body>
-    
+    <form>
+        <label for="city">City </label><br>
+        <input type="text" id="city"/><br>
+        <label for="zipcode">Zipcode</label><br>
+        <input type="number" id="zipcode"/><br>
+        <label for="radius">Nearby</label>
+        <select name="radius" id="radius">
+            <option>10 miles</option>
+            <option>25 miles</option>
+            <option>50 miles</option>
+        </select>
+    </form>
+    <main>
+        <h1>Recommendation</h1>
+        <section id="route_1">route1</section>
+        <section id="route_2">route2</section>
+        <section id="route_3">route3</section>
+        <h1>5 Day Weather</h1>
+        <section id="weather">
+            <ul>
+                <li>7/24/2023</li>
+                <li>Temp: 78°</li>
+                <li>Humidity: 87%</li>
+                <li>Wind: 8 MPH</li>
+            </ul>
+            <ul>
+                <li>7/25/2023</li>
+                <li>Temp: 75°</li>
+                <li>Humidity: 90%</li>
+                <li>Wind: 10 MPH</li>
+            </ul>
+            <ul>
+                <li>7/26/2023</li>
+                <li>Temp: 80°</li>
+                <li>Humidity: 74%</li>
+                <li>Wind: 13 MPH</li>
+            </ul>
+            <ul>
+                <li>7/27/2023</li>
+                <li>Temp: 79°</li>
+                <li>Humidity: 80%</li>
+                <li>Wind: 10 MPH</li>
+            </ul>
+            <ul>
+                <li>7/28/2023</li>
+                <li>Temp: 78°</li>
+                <li>Humidity: 87%</li>
+                <li>Wind: 12 MPH</li>
+            </ul>
+        </section>
+    </main>
 
     <script src="./script.js"></script>
 </body>
