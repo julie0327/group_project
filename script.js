@@ -19,3 +19,5 @@ async function logBeaches() {
     console.log(beaches.find(item => item.ID == firstBeachID + 2));
 
   }
+
+  //testing
