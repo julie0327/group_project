@@ -1,71 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#D1F2EB; 
+}
 
 /* simple set up*/
 h1 {
-    text-align: center;
-    background-color: royalblue;
-    color:white;
-    font-family: 'Mulish', sans-serif;
-    width:100%;
-    padding:15px;
-  }
-  .input-group {
-    margin-bottom: 15px;
-  }
-  .header-style {
-    font-size: 50px;
-    color: #ffffff;
-    font-family: 'Mulish', sans-serif;
-    text-align: center;
-  }
-  .card {
-    width:100%;
-  }
-  .fiveDay{    
-    background-color: royalblue;
-    margin: 15px;
-  }
-  h3 {
-    float:left;
-  }
-  
-  .trails{
-    text-align: center;
-  }
+  text-align: center;
+  background-color: royalblue;
+  color:white;
+  font-family: 'Mulish', sans-serif;
+  width:100%;
+  padding:15px;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+.header-style {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+}
+.card {
+  width:100%;
+}
+.fiveDay{    
+  background-color: royalblue;
+  margin: 15px;
+}
+h3 {
+  float:left;
+}
+
+.trails{
+  text-align: center;
+}
 
 
-  #route_1{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 5px;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    color: hsl(206, 17%, 28%);
-    font-size: 18px;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 30px 40px;
-    display: inline-block;
-  }
-  #route_2{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 5px;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    color: hsl(206, 17%, 28%);
-    font-size: 18px;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 30px 40px;
-    display: inline-block;
-  }
-  #route_3{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 5px;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    color: hsl(206, 17%, 28%);
-    font-size: 18px;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 30px 40px;
-    display: inline-block;
-  }
+#route_1{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  display: inline-block;
+}
+#route_2{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  display: inline-block;
+}
+#route_3{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  display: inline-block;
+}
