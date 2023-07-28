@@ -9,6 +9,7 @@
     <title>Trails</title>
 </head>
 <body>
+    <!--==--==--==--==--==-Usr Trails Input-==--==--==--==--==--==--==-->
     <form onsubmit="searchTrails()">
         <label for="County">County</label><br>
         <input type="text" id="county"/><br>
@@ -24,10 +25,26 @@
         </select>
     </form>
     <main>
+        <!--==--==--==--==--==-Trails-==--==--==--==--==--==--==-->
         <h1>Recommendation</h1>
-        <section id="route_1">route1</section>
-        <section id="route_2">route2</section>
-        <section id="route_3">route3</section>
+        <section class = "trails">
+        <section id="route_1">
+            <div id="name1"></div>
+            <div id="desc1"></div>
+            <div id="locat1"></div>
+        </section>
+        <section id="route_2">
+            <div id="name2"></div>
+            <div id="desc2"></div>
+            <div id="locat2"></div>
+        </section>
+        <section id="route_3">
+            <div id="name3"></div>
+            <div id="desc3"></div>
+            <div id="locat3"></div>
+        </section>
+        </section>
+        <!--==--==--==--==--==-Weather-==--==--==--==--==--==--==-->
         <h1>5 Day Weather</h1>
         <section id="weather">
                 <!-- search column, form and button -->
@@ -67,6 +84,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="./scripts.js"></script>
-    <script src="./script.js"></script>
+    <script src="./trailScript.js"></script>
+
 </body>
 </html>

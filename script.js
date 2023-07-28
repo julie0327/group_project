@@ -18,6 +18,8 @@ async function logBeaches() {
     console.log(beaches.find(item => item.ID == firstBeachID + 1));
     console.log(beaches.find(item => item.ID == firstBeachID + 2));
 
+    console.log("-=-=-=-=-=-=-=-=-");
+    console.log(firstBeach.DescriptionMobileWeb);
+
   }
 
-  //testing
