@@ -3,88 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
-    <title>Trails</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>UI Test</title>
 </head>
-<body>
-    <!--==--==--==--==--==-Usr Trails Input-==--==--==--==--==--==--==-->
-    <form onsubmit="searchTrails()">
-        <label for="County">County</label><br>
-        <input type="text" id="county"/><br>
-    </form>
-    <form>
-        <label for="zipcode">Zipcode</label><br>
-        <input type="number" id="zipcode"/><br>
-        <label for="radius">Nearby</label>
-        <select name="radius" id="radius">
-            <option>10 miles</option>
-            <option>25 miles</option>
-            <option>50 miles</option>
-        </select>
-    </form>
-    <main>
-        <!--==--==--==--==--==-Trails-==--==--==--==--==--==--==-->
-        <h1>Recommendation</h1>
-        <section class = "trails">
-        <section id="route_1">
-            <div id="name1"></div>
-            <div id="desc1"></div>
-            <div id="locat1"></div>
-        </section>
-        <section id="route_2">
-            <div id="name2"></div>
-            <div id="desc2"></div>
-            <div id="locat2"></div>
-        </section>
-        <section id="route_3">
-            <div id="name3"></div>
-            <div id="desc3"></div>
-            <div id="locat3"></div>
-        </section>
-        </section>
-        <!--==--==--==--==--==-Weather-==--==--==--==--==--==--==-->
-        <h1>5 Day Weather</h1>
-        <section id="weather">
-                <!-- search column, form and button -->
-                <div class="row">
-                    <div class="col-4 bg-light">
-                        <div class="mt-2">Search for a City:</div>
-                        <div class="input-group mb-3">
-                            <input type="text" id="city" class="form-control">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" id="searchCity"><i class="fas fa-search"></i></button><!-- search button-->
-                                <button class="btn btn-secondary" type="button" id="clear"><i class="fas fa-times-circle"></i></button><!-- clear button-->
-                            </div>
-                        </div>
-                        <!-- left column / list -->
-                        <div class="list-group"></div>
-                    </div>
-                    <div class="col-8">
-                        <div class="row p-2">
-                            <div class="card">
-                                <!-- main card -->
-                                <div class="card-body"></div>
-                            </div>
-                        </div>
-                            <div class="row">
-                                <h4>5-Day Forecast:</h4>
-                            </div>
-                        <!-- five day -->
-                        <div id="weeklyForecast" class="row"></div>
-                    </div>
+<body class="container">
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link is-arrowless" id="history">
+            Bookmarks
+        </a>
+        <div class="navbar-dropdown" id="option">
+            <!-- <a class="navbar-item" ></a> -->
+           
+            <hr class="navbar-divider">
+        </div>
+    </div>
+    <section class="section">
+        <h1 class="title">Go! West Coast</h1>
+        <div class="container">
+            <div class="control">
+                <div class="select">
+                    <select id="select">
+                        <option >County</option>
+                        <option value="San Diego">San Diego</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="San Mateo">San Mateo</option>
+                        <option value="Del Norte">Del Norte</option>
+                        <option value="Humboldt">Humboldt</option>
+                        <option value="Mendocino">Mendocino</option>
+                        <option value="Monterey">Monterey</option>
+                        <option value="Ventura">Ventura</option>
+                        <option value="Orange">Orange</option>
+                    </select>
                 </div>
-                
+                 <button class="button is-warning go" id="go">Go!</button>
             </div>
-        </section>
-    </main>
-    <script src="https://kit.fontawesome.com/3c309b0cab.js" crossorigin="anonymous"></script>
-     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+        </div>     
+    </section>
+    <div class="main">
+        <!-- <article class="message is-warning">
+            <div class="message-header" id="name1">
+            <p id="name1">Option 1</p>
+            <button class="button is-primary is-inverted" id="save1">Save</button>
+            </div>
+            <div class="message-body" id="desc1">
+            </div>
+        </article> -->
+        <!-- <article class="message is-warning">
+            <div class="message-header" id="name2">
+            <p id="name2">Option 2</p>
+            <button class="button is-primary is-inverted" id="save2">Save</button>
+         </div>
+         <div class="message-body" id="desc2">
+        </div>
+        </article>
+        <article class="message is-warning">
+            <div class="message-header" id="name3">
+            <p id="name3">Option 2</p>
+            <button class="button is-primary is-inverted" id="save3">Save</button>
+            </div>
+            <div class="message-body" id="desc3">
+            </div>
+        </article> -->
+    </div>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search">
+        <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+            width="1.5em" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+            </path>
+          </svg></button>
+      </div>
+      <div class="weather loading">
+        <h2 class="city">Weather in California</h2>
+        <h1 class="temp">51°C</h1>
+        <div class="flex">
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+          <div class="description">Cloudy</div>
+        </div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.2 mph</div>
+      </div>
+    </div>
     <script src="./scripts.js"></script>
     <script src="./trailScript.js"></script>
-
 </body>
 </html>
