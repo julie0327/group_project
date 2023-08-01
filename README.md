@@ -8,9 +8,9 @@ This helps the users plan their next oncomings days to aviod any weather conditi
 # Installation
 HTML,CSS,JavaScript
 # Usage
-Lets you know what the next 5 days weather forecast of any city in united states.
+
 # Credits
-N/A
+
 # License
 N/A
 # Link to Website
