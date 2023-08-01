@@ -8,8 +8,9 @@ input{
     margin-bottom:10px ;
     width:30%
 }
-.control .go{
+.container #go{
     color: #D68910;
+    margin: 0px;
 }
 .title{
     color: #D68910;
@@ -20,6 +21,9 @@ input{
     color: #D68910;
     font-size: 25px;
     left:90%
+}
+.container .navbar{
+    width:5%;
 }
 
 .card {
