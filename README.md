@@ -14,6 +14,7 @@ HTML,CSS,JavaScript
 # License
 N/A
 # Link to Website
-
+https://github.com/julie0327/trails_weather
+https://julie0327.github.io/trails_weather/
 # Deployed image of Website
 ![image1](https://github.com/julie0327/trails_weather/assets/135621096/551b3602-91c5-4e00-b26d-dc44f223e7e5)
