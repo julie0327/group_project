@@ -78,13 +78,10 @@ async function searchTrails() {
   var select = document.querySelector("#select");
   var index = select.selectedIndex;
   var usrCounty = select.options[index].value;
-  console.log(usrCounty);
 
   weather.fetchWeather(usrCounty);
   firstBeach = beaches.find((item) => item.COUNTY === usrCounty);
   firstBeachID = firstBeach.ID;
-  console.log(firstBeachID);
-  console.log(firstBeach);
 
   secondBeach = beaches.find((item) => item.ID === firstBeachID + 1);
   thirdBeach = beaches.find((item) => item.ID === firstBeachID + 2);
